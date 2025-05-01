@@ -1025,8 +1025,8 @@ return {
 	},
 	metadata = {
 		availability = {
-			yearFrom = 1988,
-			yearTo = 1997,
+			yearFrom = 2010,
+			yearTo = -1,
 		},
 		cost = {
 			price = -1,
@@ -1034,7 +1034,7 @@ return {
 		},
 		description = {
 			description = _("rils_desc"),
-			name = _("Rils 652 (DB)  [1988]"),
+			name = _("Rils 652.1 (DB Schenker)  [2010]"),
 		},
 		emission = {
 			idleEmission = -1,
@@ -1145,6 +1145,25 @@ return {
 										type = "DISCRETE",
 									},
 									seats = { },
+									type = "STEEL",
+								},
+							},
+							toHide = { },
+						},
+						{
+							cargoEntries = {
+								{
+									capacity = 88,
+									cargoBay = {
+										bbMax = { 8.5, 1.3099999427795, 3.3000001907349, },
+										bbMin = { -8.5, -1.3099999427795, 1.289999961853, },
+										cargoFormat = "SMALL",
+										childId = 0,
+										gridSize = { 8, 2, },
+										sizePolicy = "STRETCH",
+										type = "DISCRETE",
+									},
+									seats = { },
 									type = "GOODS",
 								},
 							},
@@ -1229,7 +1248,7 @@ return {
 					},
 				},
 			},
-			groupFileName = "vehicle/waggon/rils_menu.mdl",
+			groupFileName = "vehicle/waggon/rilns_menu.mdl",
 			loadSpeed = 8,
 			multipleUnitOnly = false,
 			reversible = false,

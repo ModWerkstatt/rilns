@@ -28,6 +28,18 @@ return {
 						transf = { 0.99999928474426, -1.3430874332698e-06, -0, 0, 1.3430856142804e-06, 0.99999797344208, -0.0017453274922445, 0, 2.3441282248626e-09, 0.0017453270265833, 0.9999977350235, 0, -9.5500001907349, -0.68999999761581, 1.6100000143051, 1, },
 					},
 					{
+						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
+						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
+						name = "zugschluss_db",
+						transf = { -0.99167013168335, -1.8047661569653e-06, 0.1287954300642, 0, 0.00067618780303746, -0.99998581409454, 0.0051923464052379, 0, 0.12879367172718, 0.0052361874841154, 0.99165660142899, 0, 9.5799999237061, -0.56000000238419, 1.6299999952316, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
+						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
+						name = "zugschluss_db",
+						transf = { -0.99999928474426, -1.819924591473e-06, -0, 0, 1.8199218629888e-06, -0.99999779462814, -0.0017453267937526, 0, 3.1763645047533e-09, -0.0017453264445066, 0.99999755620956, 0, 9.5500001907349, 0.70999997854233, 1.6100000143051, 1, },
+					},
+					{
 						materials = { "vehicle/waggon/rils652/Rils652_db_braunAlt.mtl", },
 						mesh = "vehicle/waggon/rils652/jay_mesh_rils652_1_detailsVorn_lod0.msh",
 						name = "jay_mesh_rils652_1_detailsVorn",
@@ -277,40 +289,6 @@ return {
 							},
 						},
 						materials = { "vehicle/waggon/rils652/Plane_db98.mtl", },
-						mesh = "vehicle/waggon/rils652/jay_mesh_rils652_planeMitte_1_lod0.msh",
-						name = "jay_mesh_rils652_planeMitte_1",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.122971534729, -1.5529116392136, 2.3855249881744, 1, },
-					},
-					{
-						animations = {
-							close_doors_left = {
-								forward = false,
-								params = {
-									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeMitte_1.ani",
-								},
-								type = "FILE_REF",
-							},
-							close_doors_right = {
-								forward = false,
-								params = {
-									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeMitte_1.ani",
-								},
-								type = "FILE_REF",
-							},
-							open_doors_left = {
-								params = {
-									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeMitte_1.ani",
-								},
-								type = "FILE_REF",
-							},
-							open_doors_right = {
-								params = {
-									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeMitte_1.ani",
-								},
-								type = "FILE_REF",
-							},
-						},
-						materials = { "vehicle/waggon/rils652/Plane_db98.mtl", },
 						mesh = "vehicle/waggon/rils652/jay_mesh_rils652_planeMitte_2_lod0.msh",
 						name = "jay_mesh_rils652_planeMitte_2",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.5070767402649, -1.5210558176041, 2.4190220832825, 1, },
@@ -349,6 +327,11 @@ return {
 						children = {
 							{
 								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
+								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod0.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod0.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89999997615814, 0, 0.45162001252174, 1, },
 							},
@@ -357,19 +340,19 @@ return {
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod0.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89999997615814, 0, 0.45162001252174, 1, },
 							},
-							{
-								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
-								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod0.msh",
-								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-							},
 						},
-						name = "DG_vorne",
-						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 7.5799999237061, 0, 0, 1, },
+						name = "dg1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.4499998092651, 0, 0, 1, },
 					},
 					{
 						children = {
 							{
 								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
+								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod0.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod0.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89999997615814, 0, 0.45162001252174, 1, },
 							},
@@ -378,14 +361,9 @@ return {
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod0.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89999997615814, 0, 0.45162001252174, 1, },
 							},
-							{
-								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
-								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod0.msh",
-								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-							},
 						},
-						name = "DG_hinten",
-						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -7.5799999237061, 0, 0, 1, },
+						name = "dg2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4499998092651, 0, 0, 1, },
 					},
 				},
 				name = "RootNode",
@@ -409,6 +387,18 @@ return {
 						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
 						name = "zugschluss_db",
 						transf = { 0.99999928474426, -1.3430874332698e-06, -0, 0, 1.3430856142804e-06, 0.99999797344208, -0.0017453274922445, 0, 2.3441282248626e-09, 0.0017453270265833, 0.9999977350235, 0, -9.5500001907349, -0.68999999761581, 1.6100000143051, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
+						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
+						name = "zugschluss_db",
+						transf = { -0.99167013168335, -1.8047661569653e-06, 0.1287954300642, 0, 0.00067618780303746, -0.99998581409454, 0.0051923464052379, 0, 0.12879367172718, 0.0052361874841154, 0.99165660142899, 0, 9.5799999237061, -0.56000000238419, 1.6299999952316, 1, },
+					},
+					{
+						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
+						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
+						name = "zugschluss_db",
+						transf = { -0.99999928474426, -1.819924591473e-06, -0, 0, 1.8199218629888e-06, -0.99999779462814, -0.0017453267937526, 0, 3.1763645047533e-09, -0.0017453264445066, 0.99999755620956, 0, 9.5500001907349, 0.70999997854233, 1.6100000143051, 1, },
 					},
 					{
 						materials = { "vehicle/waggon/rils652/Rils652_db_braunAlt.mtl", },
@@ -565,36 +555,30 @@ return {
 							close_doors_left = {
 								forward = false,
 								params = {
-									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeFront.ani",
+									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeMitte_1.ani",
 								},
 								type = "FILE_REF",
 							},
 							close_doors_right = {
 								forward = false,
 								params = {
-									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeFront.ani",
+									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeMitte_1.ani",
 								},
 								type = "FILE_REF",
 							},
 							open_doors_left = {
 								params = {
-									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeFront.ani",
+									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeMitte_1.ani",
 								},
 								type = "FILE_REF",
 							},
 							open_doors_right = {
 								params = {
-									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeFront.ani",
+									id = "vehicle/waggon/rils652/Scene/jay_mesh_rils652_planeMitte_1.ani",
 								},
 								type = "FILE_REF",
 							},
 						},
-						materials = { "vehicle/waggon/rils652/Plane_db98.mtl", },
-						mesh = "vehicle/waggon/rils652/jay_mesh_rils652_planeMitte_1_lod1.msh",
-						name = "jay_mesh_rils652_planeMitte_1",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.122971534729, -1.5529116392136, 2.3855249881744, 1, },
-					},
-					{
 						materials = { "vehicle/waggon/rils652/Plane_db98.mtl", },
 						mesh = "vehicle/waggon/rils652/jay_mesh_rils652_planeMitte_2_lod1.msh",
 						name = "jay_mesh_rils652_planeMitte_2",
@@ -628,6 +612,11 @@ return {
 						children = {
 							{
 								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
+								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod1.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89999997615814, 0, 0.45162001252174, 1, },
 							},
@@ -636,19 +625,19 @@ return {
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod1.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89999997615814, 0, 0.45162001252174, 1, },
 							},
-							{
-								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
-								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod1.msh",
-								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-							},
 						},
-						name = "DG_vorne",
-						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 7.5799999237061, 0, 0, 1, },
+						name = "dg1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.4499998092651, 0, 0, 1, },
 					},
 					{
 						children = {
 							{
 								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
+								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod1.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89999997615814, 0, 0.45162001252174, 1, },
 							},
@@ -657,14 +646,9 @@ return {
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod1.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89999997615814, 0, 0.45162001252174, 1, },
 							},
-							{
-								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
-								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod1.msh",
-								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-							},
 						},
-						name = "DG_hinten",
-						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -7.5799999237061, 0, 0, 1, },
+						name = "dg2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4499998092651, 0, 0, 1, },
 					},
 				},
 				name = "RootNode",
@@ -805,12 +789,6 @@ return {
 							},
 						},
 						materials = { "vehicle/waggon/rils652/Plane_db98.mtl", },
-						mesh = "vehicle/waggon/rils652/jay_mesh_rils652_planeMitte_1_lod2.msh",
-						name = "jay_mesh_rils652_planeMitte_1",
-						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -3.122971534729, -1.5529116392136, 2.3855249881744, 1, },
-					},
-					{
-						materials = { "vehicle/waggon/rils652/Plane_db98.mtl", },
 						mesh = "vehicle/waggon/rils652/jay_mesh_rils652_planeMitte_2_lod2.msh",
 						name = "jay_mesh_rils652_planeMitte_2",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.5070767402649, -1.5210558176041, 2.4190220832825, 1, },
@@ -837,6 +815,11 @@ return {
 						children = {
 							{
 								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
+								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod2.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89999997615814, 0, 0.45162001252174, 1, },
 							},
@@ -845,19 +828,19 @@ return {
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod2.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89999997615814, 0, 0.45162001252174, 1, },
 							},
-							{
-								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
-								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod2.msh",
-								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-							},
 						},
-						name = "DG_vorne",
-						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 7.5799999237061, 0, 0, 1, },
+						name = "dg1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.4499998092651, 0, 0, 1, },
 					},
 					{
 						children = {
 							{
 								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
+								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod1.msh",
+								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+							},
+							{
+								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod2.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89999997615814, 0, 0.45162001252174, 1, },
 							},
@@ -866,14 +849,9 @@ return {
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod2.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89999997615814, 0, 0.45162001252174, 1, },
 							},
-							{
-								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
-								mesh = "vehicle/waggon/modwerkstatt_basis/dg_ba_645/dg_ba_645_lod2.msh",
-								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
-							},
 						},
-						name = "DG_hinten",
-						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -7.5799999237061, 0, 0, 1, },
+						name = "dg2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4499998092651, 0, 0, 1, },
 					},
 				},
 				name = "RootNode",
@@ -987,34 +965,34 @@ return {
 					{
 						children = {
 							{
-								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
+								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_y25_lss_dirty.mtl", },
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod2.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89999997615814, 0, 0.45162001252174, 1, },
 							},
 							{
-								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
+								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_y25_lss_dirty.mtl", },
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod2.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89999997615814, 0, 0.45162001252174, 1, },
 							},
 						},
-						name = "DG_vorne",
-						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, 7.5799999237061, 0, 0, 1, },
+						name = "dg1",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -7.4499998092651, 0, 0, 1, },
 					},
 					{
 						children = {
 							{
-								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
+								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_y25_lss_dirty.mtl", },
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod2.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.89999997615814, 0, 0.45162001252174, 1, },
 							},
 							{
-								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_645_dirty.mtl", },
+								materials = { "vehicle/waggon/modwerkstatt_basis/dg_ba_y25_lss_dirty.mtl", },
 								mesh = "vehicle/waggon/modwerkstatt_basis/dg_achse_920mm_lod2.msh",
 								transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.89999997615814, 0, 0.45162001252174, 1, },
 							},
 						},
-						name = "DG_hinten",
-						transf = { 1, 0, 0, 0, -0, 1, 0, 0, 0, -0, 1, 0, -7.5799999237061, 0, 0, 1, },
+						name = "dg2",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 7.4499998092651, 0, 0, 1, },
 					},
 				},
 				name = "RootNode",

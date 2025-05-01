@@ -1,0 +1,100 @@
+local transf = require "transf"
+local ParamBuilder = require "parambuilder_v1_1"
+local constructionutil = require "constructionutil"
+local positionx = ParamBuilder.Slider("offsetx", _("offset x-axis"), ParamBuilder.rangeSymm(1,0.01), 1/0.01, _("jrm_param_offsetx_tooltip") )
+local model_icons = {
+                        "ui/models_small/vehicle/waggon/rilns/rilns_aae@2x.tga",
+						"ui/models_small/vehicle/waggon/rilns/rilns_aae2@2x.tga",
+						"ui/models_small/vehicle/waggon/rilns/rilns_asa@2x.tga",
+						"ui/models_small/vehicle/waggon/rilns/rilns_cfl@2x.tga",
+						"ui/models_small/vehicle/waggon/rilns/rilns_cfl2@2x.tga",
+						"ui/models_small/vehicle/waggon/rilns/rilns_err@2x.tga",
+						"ui/models_small/vehicle/waggon/rilns/rilns_eurolux@2x.tga",
+						"ui/models_small/vehicle/waggon/rilns/rilns_greenCargo@2x.tga",
+						"ui/models_small/vehicle/waggon/rilns/rilns_railLog@2x.tga",
+						"ui/models_small/vehicle/waggon/rilns/rilns_sbb@2x.tga",
+						"ui/models_small/vehicle/waggon/rilns/rilns_vtgAAE@2x.tga",
+						"ui/models_small/vehicle/waggon/rils652/rils652_db88@2x.tga",
+						"ui/models_small/vehicle/waggon/rils652/rils652_db91@2x.tga",
+						"ui/models_small/vehicle/waggon/rils652/rils652_db98@2x.tga",
+						"ui/models_small/vehicle/waggon/rils652/rils652_dbCargo@2x.tga",
+						"ui/models_small/vehicle/waggon/rils652/rils652_dbRailion@2x.tga",
+						"ui/models_small/vehicle/waggon/rils652/rils652_dbSchenker@2x.tga",
+								   
+					}
+local model_values = {
+                        "asset/rilns_aae.mdl",
+						"asset/rilns_aae2.mdl",
+						"asset/rilns_asa.mdl",
+						"asset/rilns_cfl.mdl",
+						"asset/rilns_cfl2.mdl",
+						"asset/rilns_err.mdl",
+						"asset/rilns_eurolux.mdl",
+						"asset/rilns_greenCargo.mdl",
+						"asset/rilns_railLog.mdl",
+						"asset/rilns_sbb.mdl",
+						"asset/rilns_vtgAAE.mdl",
+						"asset/rils652_db88.mdl",
+						"asset/rils652_db91.mdl",
+						"asset/rils652_db98.mdl",
+						"asset/rils652_dbCargo.mdl",
+						"asset/rils652_dbRailion.mdl",
+						"asset/rils652_dbSchenker.mdl",
+						
+					}
+local assetmodel = ParamBuilder.IconButton("type_param", _("vehicle"), model_icons, model_values, 1, _("jrm_param_type_tooltip") )
+
+function data()
+
+return {
+	type = "ASSET_TRACK",
+	description = {
+			name = _("mod_name"),
+	},
+	availability =
+	{
+			yearFrom = 1970,
+			yearTo = 0,
+	},
+	buildMode = "MULTI",
+	categories = { "tracks", "jays_mods" },
+	order = -2046867593,
+	skipCollision = true,
+	autoRemovable = false,
+	params = {
+		{
+			key = "position",
+			name = _("height"),
+			uiType = "BUTTON",
+			values = { _("ground"), _("rail") },
+			tooltip = _("height_tooltip"),
+			defaultIndex = 1,
+		},
+		positionx.params,
+		assetmodel.params,
+	},
+	updateFn = function(params)
+		local trax = positionx.getValue(params)
+		local height = 0
+		if params.position == 1 then
+			height = 1.05
+		end
+
+	local result = { }
+	result.models = { }
+
+	table.insert(result.models, {
+		id = assetmodel.getValue(params),
+		transf = constructionutil.rotateTransf(params, { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, trax, 0, height, 1 }),
+	} )
+
+		result.terrainAlignmentLists = { {
+			type = "EQUAL",
+			faces =  { }
+		} }
+
+		return result
+	end
+}
+
+end
