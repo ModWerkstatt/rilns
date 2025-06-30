@@ -18,7 +18,7 @@ return {
 		        role = "CREATOR",
 		    },  
 		},
-		tags = { "europe", "waggon", "deutschland", "germany", "gueterwagen", "db", "limms", "astrans" },
+		tags = { "europe", "wagon", "deutschland", "germany", "gueterwagen", "db", "limms", "astrans" },
 		tfnetId = { },
 		minGameVersion = 0,
 		dependencies = { },
