@@ -15,30 +15,8 @@ return {
 		{
 			node = {
 				children = {
-					{
-						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
-						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
-						name = "zugschluss_db",
-						transf = { 0.99167031049728, -1.3319007621249e-06, 0.12879548966885, 0, -0.00067302526440471, 0.99998581409454, 0.0051923487335443, 0, -0.12879373133183, -0.0052357837557793, 0.99165678024292, 0, -9.5799999237061, 0.54000002145767, 1.6299999952316, 1, },
-					},
-					{
-						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
-						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
-						name = "zugschluss_db",
-						transf = { 0.99999928474426, -1.3430874332698e-06, -0, 0, 1.3430856142804e-06, 0.99999797344208, -0.0017453274922445, 0, 2.3441282248626e-09, 0.0017453270265833, 0.9999977350235, 0, -9.5500001907349, -0.68999999761581, 1.6100000143051, 1, },
-					},
-					{
-						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
-						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
-						name = "zugschluss_db",
-						transf = { -0.99167013168335, -1.8047661569653e-06, 0.1287954300642, 0, 0.00067618780303746, -0.99998581409454, 0.0051923464052379, 0, 0.12879367172718, 0.0052361874841154, 0.99165660142899, 0, 9.5799999237061, -0.56000000238419, 1.6299999952316, 1, },
-					},
-					{
-						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
-						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
-						name = "zugschluss_db",
-						transf = { -0.99999928474426, -1.819924591473e-06, -0, 0, 1.8199218629888e-06, -0.99999779462814, -0.0017453267937526, 0, 3.1763645047533e-09, -0.0017453264445066, 0.99999755620956, 0, 9.5500001907349, 0.70999997854233, 1.6100000143051, 1, },
-					},
+
+
 					{
 						materials = { "vehicle/waggon/rils652/Rils652_db_vorserie_braun.mtl", },
 						mesh = "vehicle/waggon/rils652/jay_mesh_rils652_0_frontNonAnim_lod0.msh",
@@ -442,30 +420,8 @@ return {
 		{
 			node = {
 				children = {
-					{
-						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
-						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
-						name = "zugschluss_db",
-						transf = { 0.99167031049728, -1.3319007621249e-06, 0.12879548966885, 0, -0.00067302526440471, 0.99998581409454, 0.0051923487335443, 0, -0.12879373133183, -0.0052357837557793, 0.99165678024292, 0, -9.5799999237061, 0.54000002145767, 1.6299999952316, 1, },
-					},
-					{
-						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
-						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
-						name = "zugschluss_db",
-						transf = { 0.99999928474426, -1.3430874332698e-06, -0, 0, 1.3430856142804e-06, 0.99999797344208, -0.0017453274922445, 0, 2.3441282248626e-09, 0.0017453270265833, 0.9999977350235, 0, -9.5500001907349, -0.68999999761581, 1.6100000143051, 1, },
-					},
-					{
-						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
-						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
-						name = "zugschluss_db",
-						transf = { -0.99167013168335, -1.8047661569653e-06, 0.1287954300642, 0, 0.00067618780303746, -0.99998581409454, 0.0051923464052379, 0, 0.12879367172718, 0.0052361874841154, 0.99165660142899, 0, 9.5799999237061, -0.56000000238419, 1.6299999952316, 1, },
-					},
-					{
-						materials = { "vehicle/waggon/modwerkstatt_basis/zugschluss.mtl", },
-						mesh = "vehicle/waggon/modwerkstatt_basis/zugschluss/zugschluss_de_lod0.msh",
-						name = "zugschluss_db",
-						transf = { -0.99999928474426, -1.819924591473e-06, -0, 0, 1.8199218629888e-06, -0.99999779462814, -0.0017453267937526, 0, 3.1763645047533e-09, -0.0017453264445066, 0.99999755620956, 0, 9.5500001907349, 0.70999997854233, 1.6100000143051, 1, },
-					},
+
+
 					{
 						materials = { "vehicle/waggon/rils652/Rils652_db_vorserie_braun.mtl", },
 						mesh = "vehicle/waggon/rils652/jay_mesh_rils652_0_frontNonAnim_lod1.msh",
